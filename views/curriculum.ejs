@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+</head>
+
+<body>
+    <main>
+        <h1><%= title %></h1>
+        <p>Bem vindo(a) ao <strong><%= title %></strong></p>
+        <strong><%= name %></strong>
+        <p><%= profession %></p>
+        <p><%= description %></p>
+        <ul>
+            <% experience.map(experience => { %>
+            <li>
+                <div>
+                    <strong><%= experience.company %>:</strong>
+                    <strong><%= experience.office %></strong>
+                    <br>
+                    <span><%= experience.description %></span>
+                </div>
+            </li>
+            <% }) %>
+        </ul>
+    </main>
+</body>
+
+</html>
